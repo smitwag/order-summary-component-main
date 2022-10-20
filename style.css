@@ -1,0 +1,127 @@
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('images/pattern-background-mobile.svg');
+  background-size: center / contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: var(--paleBlue);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff;
+  width: 90%;
+  max-width: 375px;
+  border-radius: 1.3rem;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 1.3rem 1.3rem 0 0;
+}
+
+.card-info {
+  font-family: 'Red Hat Display', sans-serif;
+  color: var(--desaturatedBlue);
+  text-align: center;
+  padding: 1.8rem 1.5rem 2rem 1.5rem;
+}
+
+.card-info h1 {
+  color: var(--darkBlue);
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.card-info > p {
+  line-height: 1.75em;
+  padding: 1.2em 1em;
+}
+
+.card-info-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--veryPaleBlue);
+  padding: 1.25em;
+  line-height: 1.5;
+  border-radius: 1em;
+  margin-bottom: 1.5rem;
+}
+
+.card-info-plan p {
+  margin-right: auto;
+}
+
+.card-info-plan img {
+  margin-right: 1.25em;
+}
+
+.card-info-plan__plan {
+  color: var(--darkBlue);
+  font-weight: 900;
+}
+
+.card-info-plan a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--desaturatedBlue);
+}
+
+.btn-cta {
+  color: #fff;
+  background-color: var(--brightBlue);
+  padding: 1em;
+  border-radius: 1em;
+  margin-bottom: 1.5rem;
+}
+
+.card-info-plan a:hover,
+.btn-cta:hover {
+  opacity: 0.7;
+}
+
+.btn-cancel:hover {
+  color: var(--darkBlue);
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 475px;
+  }
+  .card-info {
+    padding: 2.5rem 3rem;
+  }
+  
+}
+
+@media (min-width: 375px) {
+  body {
+    background-image: url('images/pattern-background-desktop.svg');
+  }
+}

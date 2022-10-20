@@ -117,7 +117,9 @@ body {
   .card-info {
     padding: 2.5rem 3rem;
   }
-  
+  .card-info h1 {
+    font-size: 32px;
+  }
 }
 
 @media (min-width: 375px) {

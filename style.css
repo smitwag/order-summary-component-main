@@ -14,7 +14,7 @@
 
 body {
   background-image: url('images/pattern-background-mobile.svg');
-  background-size: center / contain;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
   background-color: var(--paleBlue);
@@ -112,7 +112,7 @@ body {
 
 @media (min-width: 768px) {
   .card {
-    max-width: 475px;
+    max-width: 450px;
   }
   .card-info {
     padding: 2.5rem 3rem;
